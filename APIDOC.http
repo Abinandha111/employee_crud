@@ -1,0 +1,50 @@
+# API CALL FOR LIST EMPLOYEES
+
+### 
+GET  http://127.0.0.1:8000/employees/
+Accept: application/json
+
+# API CALL FOR CREATE NEW EMPLOYEE
+
+###
+POST http://127.0.0.1:8000/employees/
+Content-Type: application/json
+
+{
+    "name":"Arun",
+    "email":"arun@gamil.com",
+    "phone":"1234556",
+    "salary":450000,
+    "department":"hr",
+    "location":"tvm"
+}
+
+#API CALL FOR RETRIEVE 
+
+###
+GET http://127.0.0.1:8000/employees/1/
+Accept: application/json
+
+
+# API CALL FOR UPDATING
+
+###
+PUT http://127.0.0.1:8000/employees/1/
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Arun",
+    "email": "arun@gamil.com",
+    "phone": "456789",
+    "salary": "750000.00",
+    "department": "hr",
+    "location": "tsr"
+  }
+
+
+# API CALL FOR DELETE
+
+###
+DELETE http://127.0.0.1:8000/employees/1/
+Accept: application/json
